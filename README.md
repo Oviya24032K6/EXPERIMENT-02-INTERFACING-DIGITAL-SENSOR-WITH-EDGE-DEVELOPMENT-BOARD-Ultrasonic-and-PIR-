@@ -207,7 +207,8 @@ while True:
 
 # FIGURE -09 
 
-<img width="607" height="417" alt="WhatsApp Image 2026-04-28 at 2 24 21 PM" src="https://github.com/user-attachments/assets/5262e227-e8e2-40f1-9d63-a7fd239f329a" />
+<img width="899" height="1599" alt="1" src="https://github.com/user-attachments/assets/5d5d7519-5ba4-4f7e-acde-48302d15c578" />
+
 
 
 ## RESULTS
