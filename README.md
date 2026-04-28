@@ -159,12 +159,21 @@ Experiment 2B
 ### OUPUT  
 Experiment 2B
 
-# FIGURE -07 ADD TITILE HERE 
+# FIGURE -07 
+<img width="1600" height="767" alt="WhatsApp Image 2026-04-28 at 2 22 57 PM" src="https://github.com/user-attachments/assets/f03ebcea-6ec1-4299-924a-b19c2fa7281a" />
 
-#  FIGURE -08 ADD TITILE HERE 
+<img width="607" height="417" alt="WhatsApp Image 2026-04-28 at 2 23 38 PM" src="https://github.com/user-attachments/assets/73f1e57d-99d9-4f9f-820f-9aa3c1c61618" />
 
-# FIGURE -09 ADD TITLE HERE 
 
- 
+#  FIGURE -08 
+<img width="1600" height="780" alt="WhatsApp Image 2026-04-28 at 2 23 52 PM" src="https://github.com/user-attachments/assets/8441149a-b0dd-48a5-806c-c76a751b6a92" />
+<img width="607" height="417" alt="WhatsApp Image 2026-04-28 at 2 24 21 PM" src="https://github.com/user-attachments/assets/c6e779e4-f43c-4197-a264-c7ba8853eaa0" />
+
+
+# FIGURE -09 
+
+<img width="607" height="417" alt="WhatsApp Image 2026-04-28 at 2 24 21 PM" src="https://github.com/user-attachments/assets/5262e227-e8e2-40f1-9d63-a7fd239f329a" />
+
+
 ## RESULTS
 The Ultrasonic sensor and PIR sensor is connected to the Raspberry Pi 4 successfully and the distance and the motion detection is visualised in thingspeak confirming the proper interfacing of a digital output.
