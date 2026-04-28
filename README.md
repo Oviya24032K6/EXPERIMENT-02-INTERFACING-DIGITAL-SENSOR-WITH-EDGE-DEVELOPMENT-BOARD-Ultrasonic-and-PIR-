@@ -59,7 +59,7 @@ Connect the PIR sensor Vcc to any +5V.
 Connect the PIR sensor GND to any GND.
 Connect the PIR sensor OUT to any one GPIO. 
 
-Experiment 2A
+# Experiment 2A
 ## PROGRAM (Python)
 ```
 import RPi.GPIO as GPIO
@@ -143,7 +143,7 @@ except KeyboardInterrupt:
 # FIGURE -06 
 <img width="1200" height="1600" alt="WhatsApp Image 2026-04-28 at 2 03 15 PM" src="https://github.com/user-attachments/assets/812a879e-f31b-4f86-9ad1-57e14ca65d0a" />
 
-Experiment 2B
+# Experiment 2B
 ## PROGRAM (Python)
 ```
 import RPi.GPIO as GPIO
