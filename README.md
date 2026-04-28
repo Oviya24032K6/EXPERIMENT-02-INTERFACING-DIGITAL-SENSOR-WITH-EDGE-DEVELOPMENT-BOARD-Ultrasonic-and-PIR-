@@ -131,8 +131,7 @@ except KeyboardInterrupt:
  
 ````
 
-### OUPUT  
-Experiment 2A
+### OUPUT  - EXPERIMENT 2A
 
 # FIGURE -04 
 <img width="1600" height="781" alt="WhatsApp Image 2026-04-28 at 2 01 50 PM" src="https://github.com/user-attachments/assets/a8b509e0-e1d3-4bfd-973c-1d683ff61f7b" />
@@ -147,17 +146,53 @@ Experiment 2A
 Experiment 2B
 ## PROGRAM (Python)
 ```
+import RPi.GPIO as GPIO
+import time
+import requests
 
+WRITE_API_KEY = "JJ7IP6FDDWOS07A3"
+URL = "https://api.thingspeak.com/update"
 
- 
+PIR_PIN = 24
 
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(PIR_PIN, GPIO.IN)
 
+print("PIR Monitoring Started...")
+time.sleep(2)
 
+last_state = -1   # store previous state
+
+def update_thingspeak(state):
+    data = {
+        "api_key": WRITE_API_KEY,
+        "field1": state
+    }
+    try:
+        requests.get(URL, params=data)
+        print("Uploaded to ThingSpeak:", state)
+    except:
+        print("Upload Failed")
+
+while True:
+    motion = GPIO.input(PIR_PIN)
+
+    if motion != last_state:   # send only if changed
+        if motion == 1:
+            print("Motion Detected")
+            update_thingspeak(1)
+        else:
+            print("No Motion")
+            update_thingspeak(0)
+
+        last_state = motion
+        time.sleep(15)  # ThingSpeak delay
+
+    time.sleep(1)
  
 ````
 
-### OUPUT  
-Experiment 2B
+### OUPUT  - EXPERIMENT 2B
 
 # FIGURE -07 
 <img width="1600" height="767" alt="WhatsApp Image 2026-04-28 at 2 22 57 PM" src="https://github.com/user-attachments/assets/f03ebcea-6ec1-4299-924a-b19c2fa7281a" />
